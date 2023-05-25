@@ -1,0 +1,42 @@
+.slider-main-section {
+  @apply md:rounded-2xl overflow-hidden;
+}
+
+.slider-thumbails-section {
+  @apply hidden md:block;
+
+  .splide__track--nav {
+    > .splide__list {
+      > .splide__slide {
+        @apply border-2 border-white rounded-xl relative;
+
+        &:after {
+          content: "";
+          @apply absolute left-0 top-0 right-0 bottom-0 rounded-[9px] transition-all;
+        }
+
+        &:hover {
+          &:after {
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        &.is-active {
+          @apply border-tertiary;
+
+          &:after {
+            background-color: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+    }
+  }
+}
+
+.splide__arrow {
+  @apply bg-white opacity-100 w-[40px] h-[40px] md:w-[56px] md:h-[56px] #{!important};
+
+  svg {
+    @apply w-[1rem] h-[1rem] #{!important};
+  }
+}
