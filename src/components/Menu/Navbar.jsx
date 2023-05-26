@@ -6,7 +6,7 @@ import { navLinks } from "../../constants";
 
 const Navbar = ({ openDrawer }) => {
   return (
-    <nav className="navbar px-6">
+    <nav className="navbar px-6 sticky left-0 top-0 right-0 z-10 bg-white">
       <div className="container mx-auto py-5 flex flex-1 justify-between items-center border-lightBlue md:border-b md:pt-7 md:pb-0 md:items-start">
         <div className="flex items-end md:pt-3.5 md:items-start">
           {/* Mobile menu toggler */}
