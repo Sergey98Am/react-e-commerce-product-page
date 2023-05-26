@@ -1,0 +1,9 @@
+.product-quantity {
+    .quantity-button {
+        @apply transition;
+
+        &:hover {
+            @apply opacity-50;
+        }
+    }
+}
