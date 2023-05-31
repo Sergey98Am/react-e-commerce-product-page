@@ -1,5 +1,13 @@
 .slider-main-section {
-  @apply md:rounded-2xl overflow-hidden;
+  .splide__track {
+    @apply md:rounded-2xl overflow-hidden;
+    
+    > .splide__list {
+      > .splide__slide {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .slider-thumbails-section {
@@ -8,6 +16,10 @@
   .splide__track--nav {
     > .splide__list {
       > .splide__slide {
+        &:last-child {
+          margin-right: 0 !important;
+        }
+
         @apply border-2 border-white rounded-xl relative;
 
         &:after {
@@ -38,5 +50,41 @@
 
   svg {
     @apply w-[1rem] h-[1rem] #{!important};
+  }
+}
+
+.slider-modal {
+  .splide__arrow {
+    &:hover {
+      svg {
+        @apply fill-tertiary;
+      }
+    }
+  }
+
+  .splide__arrow--prev {
+    left: -1.5rem;
+  }
+
+  .splide__arrow--next {
+    right: -1.5rem;
+  }
+
+  .slider-main-section {
+    .splide__track {      
+      > .splide__list {
+        > .splide__slide {
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  .slider-thumbails-section {  
+    .splide__track--nav {
+      > .splide__list {
+        justify-content: center;
+      }
+    }
   }
 }
