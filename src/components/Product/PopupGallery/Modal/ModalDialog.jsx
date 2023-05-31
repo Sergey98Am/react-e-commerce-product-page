@@ -8,10 +8,9 @@ const ModalDialog = ({
   sliderIndex,
   open,
   onClose,
-  handleOpen,
 }) => {
   return (
-    <Dialog open={open} size="lg" className="bg-transparent shadow-none slider-modal">
+    <Dialog open={open} size="lg" className="hidden bg-transparent shadow-none slider-modal md:block">
       <div className="mx-auto max-w-[550px]">
         <DialogHeader className="justify-end px-0 pt-0">
           <IconButton

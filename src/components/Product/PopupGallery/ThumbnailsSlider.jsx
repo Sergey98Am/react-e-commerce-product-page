@@ -60,7 +60,7 @@ const ThumbnailsSlider = () => {
       <div className="slider-main-section">
         <Splide options={mainOptions} ref={mainRef}>
           {product.slides.map((slide, index) => (
-            <SplideSlide index={index} key={slide.src} onClick={handleOpen}>
+            <SplideSlide index={index} key={slide.src} onClick={handleOpen} className="pointer-events-none md:pointer-events-auto">
               <img src={slide.src} alt={slide.alt} />
             </SplideSlide>
           ))}
