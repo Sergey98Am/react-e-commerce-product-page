@@ -1,14 +1,19 @@
-import React from "react";
+import { useContext } from "react";
+import CartContext from "../../../../Context/Cart/CartContext";
 import iconCart from "../../../../assets/icon-cart-white.svg";
+import product from "../../../../data";
 
-const AddToCartButton = () => {
+const AddToCartButton = ({ quantity }) => {
+
+  const { addToCart } = useContext(CartContext);
+
   return (
-    <div className="add-to-cart-button">
-      <button className="flex justify-center items-center rounded-xl shadow-[0px_20px_50px_-20px_#FF7E1B] bg-tertiary font-bold text-white h-[56px] w-full md:shadow-none md:w-[142px] lg:w-[222px] xl:w-[272px]">
-        <div className="cart-icon me-4">
+    <div className="add-to-cart-button flex flex-1">
+      <button onClick={() => addToCart({...product, quantity })} className="btn btn-orange flex flex-1 justify-center items-center">
+        <span className="cart-icon me-4">
           <img src={iconCart} alt="" className="w-4 h-4" />
-        </div>
-        Add to cart
+        </span>
+        <span>Add to cart</span>
       </button>
     </div>
   );
