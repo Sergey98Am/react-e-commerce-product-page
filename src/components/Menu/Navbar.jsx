@@ -1,7 +1,7 @@
-import logo from "../../assets/logo.svg";
-import userAvatar from "../../assets/image-avatar.png";
-import iconMenu from "../../assets/icon-menu.svg";
-import { navLinks } from "../../constants";
+import logo from "@/assets/logo.svg";
+import userAvatar from "@/assets/image-avatar.png";
+import iconMenu from "@/assets/icon-menu.svg";
+import { navLinks } from "@/constants";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 
 const Navbar = ({ openDrawer }) => {

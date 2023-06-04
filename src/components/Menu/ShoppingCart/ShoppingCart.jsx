@@ -1,8 +1,8 @@
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment, useContext } from "react";
-import iconCart from "../../../assets/icon-cart.svg";
+import iconCart from "@/assets/icon-cart.svg";
 import CartItem from "./CartItem";
-import CartContext from "../../../Context/Cart/CartContext";
+import CartContext from "@/Context/Cart/CartContext";
 
 export default function ShoppingCart() {
   // Extract itemscount from CartContext

@@ -1,6 +1,6 @@
 import { useEffect, createRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import product from "../../../../data";
+import product from "@/data";
 
 const ModalContent = ({ mainOptions, thumbsOptions, sliderIndex }) => {
   /**

@@ -1,5 +1,5 @@
 import React from "react";
-import product from "../../../data";
+import product from "@/data";
 
 const Price = () => {
   return (

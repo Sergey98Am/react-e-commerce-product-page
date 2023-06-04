@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import ModalContent from "./ModalContent";
-import whiteCloseIcon from "../../../../assets/icon-close-white.svg";
+import whiteCloseIcon from "@/assets/icon-close-white.svg";
 
 const ModalDialog = ({
   mainOptions,

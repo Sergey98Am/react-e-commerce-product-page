@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { createRef, useRef } from "react";
-import product from "../../../data";
+import { createRef } from "react";
+import product from "@/data";
 import ModalDialog from "./Modal/ModalDialog";
 
 const ThumbnailsSlider = () => {
