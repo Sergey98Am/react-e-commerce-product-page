@@ -36,21 +36,19 @@ const ModalContent = ({ mainOptions, thumbsOptions, sliderIndex }) => {
   };
 
   return (
-    // <>
-      <div className="mx-auto max-w-[550px]">
-        <div className="slider-main-section">
-          <Splide options={mOptions} ref={mainRef}>
-            {renderSlides()}
-          </Splide>
-        </div>
-
-        <div className="mt-8 slider-thumbails-section">
-          <Splide options={thumbsOptions} ref={thumbsRef}>
-            {renderSlides()}
-          </Splide>
-        </div>
+    <>
+      <div className="slider-main-section">
+        <Splide options={mOptions} ref={mainRef}>
+          {renderSlides()}
+        </Splide>
       </div>
-    // </>
+
+      <div className="mt-8 slider-thumbails-section">
+        <Splide options={thumbsOptions} ref={thumbsRef}>
+          {renderSlides()}
+        </Splide>
+      </div>
+    </>
   );
 };
 

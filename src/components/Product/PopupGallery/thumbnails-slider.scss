@@ -46,10 +46,10 @@
 }
 
 .splide__arrow {
-  @apply bg-white opacity-100 w-[40px] h-[40px] md:w-[56px] md:h-[56px] #{!important};
+  @apply bg-white opacity-100 w-10 h-10 md:w-14 md:h-14 #{!important};
 
   svg {
-    @apply w-[1rem] h-[1rem] #{!important};
+    @apply w-4 h-4 #{!important};
   }
 }
 

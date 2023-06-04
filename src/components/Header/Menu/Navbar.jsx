@@ -14,10 +14,10 @@ const Navbar = ({ openDrawer }) => {
             <img src={iconMenu} alt="icon-menu" onClick={openDrawer} />
           </div>
 
-          {/* Logo */}
+          {/* Logo (140 x 20px) */}
           <div className="navbar-brand me-14">
             <a href="/">
-              <img src={logo} alt="logo" className="w-[138px] h-[20px]" />
+              <img src={logo} alt="logo" className="w-[8.75rem] h-5" />
             </a>
           </div>
 
@@ -40,7 +40,7 @@ const Navbar = ({ openDrawer }) => {
         {/* End menu items */}
         <div className="flex items-center md:items-start">
           <ShoppingCart />
-          <div className="transition cursor-pointer items-center w-[25px] h-[25px] bg-black rounded-full border-2 hover:border-tertiary md:w-[50px] md:h-[50px]">
+          <div className="transition cursor-pointer items-center w-6 h-6 bg-black rounded-full border-2 hover:border-tertiary md:w-12 md:h-12">
             <img src={userAvatar} alt="avatar" />
           </div>
         </div>
