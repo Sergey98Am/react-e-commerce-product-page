@@ -22,7 +22,7 @@ const MobileMenu = ({ open, closeDrawer }) => {
 
           <div className="fixed inset-0 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
-              <div className="pointer-events-none fixed inset-y-0 flex max-w-[250px]">
+              <div className="pointer-events-none fixed inset-y-0 flex max-w-[16rem]">
                 <Transition.Child
                   as={Fragment}
                   enter="transform transition ease-in-out duration-500 sm:duration-700"

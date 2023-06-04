@@ -11,10 +11,10 @@ const Product = () => {
 
   return (
     <div className="product px-0 md:px-6">
-      <div className="container mx-auto mb-20 md:mt-10 md:mb-[130px] lg:mt-[90px]">
-        <div className="grid grid-cols-1 mx-0 md:grid-cols-2 md:gap-10 lg:mx-12 lg:gap-20 xl:gap-[125px]">
+      <div className="container mx-auto mb-20 md:mt-10 md:mb-32 lg:mt-[5.5rem]">
+        <div className="grid grid-cols-1 mx-0 md:grid-cols-2 md:gap-10 lg:mx-12 lg:gap-20 xl:gap-32">
           <ThumbnailsSlider modalIsOpen={false} />
-          <div className="p-6 md:p-0 md:mt-[30px] lg:mt-[60px]">
+          <div className="p-6 md:p-0 md:mt-7 lg:mt-14">
             <Info />
             <Price />
             <div className="actions flex flex-col md:flex-row">

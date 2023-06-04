@@ -42,7 +42,7 @@ const ModalDialog = ({
                 leaveTo="opacity-0"
               >
                 <Dialog.Panel className="transition w-full">
-                  <div className="mx-auto max-w-[550px]">
+                  <div className="mx-auto max-w-[34.25rem]">
                     <div className="close-modal flex justify-end mb-5">
                       <button onClick={onClose}>
                         <img src={whiteCloseIcon} alt="icon-close" />

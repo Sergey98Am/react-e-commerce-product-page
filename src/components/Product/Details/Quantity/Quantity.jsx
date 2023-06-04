@@ -10,7 +10,7 @@ const Quantity = ({ quantity, decreaseQuantity, increaseQuantity }) => {
       >
         <img src={iconMinus} alt="" />
       </button>
-      <button className="px-5 py-4 flex-1 font-bold">{quantity}</button>
+      <div className="py-4 flex-1 text-center font-bold w-[3.5rem]">{quantity}</div>
       <button
         onClick={increaseQuantity}
         className="quantity-button px-5 py-4"

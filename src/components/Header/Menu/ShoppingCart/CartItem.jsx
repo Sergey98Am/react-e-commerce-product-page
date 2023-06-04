@@ -13,7 +13,7 @@ const CartItem = ({ product }) => {
           <img
             src={product.slides[0].src}
             alt="cart-image"
-            className="w-[50px] h-[50px]"
+            className="w-12 h-12"
           />
         </div>
         <div className="cart-info">

@@ -11,14 +11,14 @@ export default function ShoppingCart() {
   return (
     <div className="">
       <Popover className="md:relative">
-        <Popover.Button className="relative icon pt-0 mr-[22px] md:pt-3.5 md:mr-[46px]">
+        <Popover.Button className="relative icon pt-0 mr-[1.375rem] md:pt-3.5 md:mr-11">
           {/* If the number of cartItems is greater than 0, display the number of items in the cart */}
           {itemCount > 0 && (
-            <div className="bg-tertiary rounded-lg px-2 cart-items-count absolute top-[-6px] right-[-10px] text-[10px] text-white font-[600] md:top-[6px]">
+            <div className="bg-tertiary rounded-lg px-2 cart-items-count absolute top-[-0.375rem] right-[-0.625rem] text-[0.625rem] text-white font-[600] md:top-1.5">
               {itemCount}
             </div>
           )}
-          <img src={iconCart} className="w-[20px] h-[20px]" alt="icon-cart" />
+          <img src={iconCart} className="w-[1.25rem] h-[1.25rem]" alt="icon-cart" />
         </Popover.Button>
         <Transition
           as={Fragment}
@@ -29,7 +29,7 @@ export default function ShoppingCart() {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-1"
         >
-          <Popover.Panel className="absolute left-full -translate-x-full p-2 pt-4 z-10 mt-3 w-screen transform md:max-w-[360px] md:p-0 2xl:left-1/2 2xl:-translate-x-1/2">
+          <Popover.Panel className="absolute left-full -translate-x-full p-2 pt-4 z-10 mt-3 w-screen transform md:max-w-[22.5rem] md:p-0 2xl:left-1/2 2xl:-translate-x-1/2">
             <div className="overflow-hidden rounded-xl shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <div className="bg-white">
                 <h5 className="p-5 border-b border-lightBlue">
@@ -37,7 +37,7 @@ export default function ShoppingCart() {
                 </h5>
                 <div className="cart-content p-6 pb-8">
                   {itemCount > 0 ? (
-                    <div className="cart-items min-h-[134px]">
+                    <div className="cart-items min-h-[8.5rem]">
                       {cartItems.map((product) => (
                         <CartItem key={product.id} product={product} />
                       ))}
@@ -48,7 +48,7 @@ export default function ShoppingCart() {
                       </div>
                     </div>
                   ) : (
-                    <div className="empty min-h-[134px] flex justify-center items-center">
+                    <div className="empty min-h-[8.5rem] flex justify-center items-center">
                       <h5 className="text-secondary">Your cart is empty.</h5>
                     </div>
                   )}
