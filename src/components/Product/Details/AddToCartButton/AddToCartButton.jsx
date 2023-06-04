@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import CartContext from "../../../../Context/Cart/CartContext";
-import iconCart from "../../../../assets/icon-cart-white.svg";
-import product from "../../../../data";
+import CartContext from "@/Context/Cart/CartContext";
+import iconCart from "@/assets/icon-cart-white.svg";
+import product from "@/data";
 
 const AddToCartButton = ({ quantity }) => {
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import CartContext from "../../../Context/Cart/CartContext";
-import deleteIcon from "../../../assets/icon-delete.svg";
+import CartContext from "@/Context/Cart/CartContext";
+import deleteIcon from "@/assets/icon-delete.svg";
 
 const CartItem = ({ product }) => {
 

@@ -1,5 +1,5 @@
-import iconMinus from "../../../../assets/icon-minus.svg";
-import iconPlus from "../../../../assets/icon-plus.svg";
+import iconMinus from "@/assets/icon-minus.svg";
+import iconPlus from "@/assets/icon-plus.svg";
 
 const Quantity = ({ quantity, decreaseQuantity, increaseQuantity }) => {
   return (

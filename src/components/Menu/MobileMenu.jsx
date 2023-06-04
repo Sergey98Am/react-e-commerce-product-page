@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import iconClose from "../../assets/icon-close.svg";
-import { navLinks } from "../../constants";
+import iconClose from "@/assets/icon-close.svg";
+import { navLinks } from "@/constants";
 import { Dialog, Transition } from "@headlessui/react";
 
 const MobileMenu = ({ open, closeDrawer }) => {
