@@ -9,6 +9,26 @@ body {
   margin: 0;
 }
 
+@layer components {
+  .btn {
+    @apply relative py-5 px-6 rounded-xl font-bold text-white md:shadow-none;
+
+    &::after {
+      content: "";
+      @apply absolute left-0 top-0 right-0 bottom-0 transition;
+    }
+
+    &:hover {
+      &:after {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  .btn-orange {
+    @apply bg-tertiary shadow-[0px_20px_50px_-20px_#FF7E1B];
+  }
+}
+
 @import "./components/Product/PopupGallery/thumbnails-slider.scss";
 @import "./components/Product/Details/Quantity/quantity.scss";
-@import "./components/Product/Details/AddToCartButton/add-to-cart-button.scss";

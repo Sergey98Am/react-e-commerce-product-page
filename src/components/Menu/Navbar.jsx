@@ -1,8 +1,8 @@
 import logo from "../../assets/logo.svg";
-import iconCart from "../../assets/icon-cart.svg";
 import userAvatar from "../../assets/image-avatar.png";
 import iconMenu from "../../assets/icon-menu.svg";
 import { navLinks } from "../../constants";
+import ShoppingCart from "./ShoppingCart/ShoppingCart";
 
 const Navbar = ({ openDrawer }) => {
   return (
@@ -39,15 +39,7 @@ const Navbar = ({ openDrawer }) => {
 
         {/* End menu items */}
         <div className="flex items-center md:items-start">
-          <div className="icon pt-0 mr-[22px] md:pt-3.5 md:mr-[46px]">
-            <a href="">
-              <img
-                src={iconCart}
-                className="w-[20px] h-[20px]"
-                alt="icon-cart"
-              />
-            </a>
-          </div>
+          <ShoppingCart />
           <div className="transition cursor-pointer items-center w-[25px] h-[25px] bg-black rounded-full border-2 hover:border-tertiary md:w-[50px] md:h-[50px]">
             <img src={userAvatar} alt="avatar" />
           </div>

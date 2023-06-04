@@ -4,6 +4,7 @@ import product3 from "./assets/image-product-3.jpg";
 import product4 from "./assets/image-product-4.jpg";
 
 const product = {
+  id: 1,
   company: "Sneaker Company",
   title: "Fall Limited Edition Sneakers",
   description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",

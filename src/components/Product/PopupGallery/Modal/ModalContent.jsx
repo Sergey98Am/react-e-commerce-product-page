@@ -2,11 +2,7 @@ import { useEffect, createRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import product from "../../../../data";
 
-const ModalContent = ({
-  mainOptions,
-  thumbsOptions,
-  sliderIndex
-}) => {
+const ModalContent = ({ mainOptions, thumbsOptions, sliderIndex }) => {
   /**
    * The main Splide component.
    */
@@ -40,19 +36,21 @@ const ModalContent = ({
   };
 
   return (
-    <>
-      <div className="slider-main-section">
-        <Splide options={mOptions} ref={mainRef}>
-          {renderSlides()}
-        </Splide>
-      </div>
+    // <>
+      <div className="mx-auto max-w-[550px]">
+        <div className="slider-main-section">
+          <Splide options={mOptions} ref={mainRef}>
+            {renderSlides()}
+          </Splide>
+        </div>
 
-      <div className="mt-8 slider-thumbails-section">
-        <Splide options={thumbsOptions} ref={thumbsRef}>
-          {renderSlides()}
-        </Splide>
+        <div className="mt-8 slider-thumbails-section">
+          <Splide options={thumbsOptions} ref={thumbsRef}>
+            {renderSlides()}
+          </Splide>
+        </div>
       </div>
-    </>
+    // </>
   );
 };
 
